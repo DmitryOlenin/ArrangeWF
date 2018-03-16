@@ -1,0 +1,9 @@
+c:\GitHub\ArrangeWF\ArrangeWF\bin\Debug\ArrangeWF.exe.config
+c:\GitHub\ArrangeWF\ArrangeWF\bin\Debug\ArrangeWF.exe
+c:\GitHub\ArrangeWF\ArrangeWF\bin\Debug\ArrangeWF.pdb
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.csprojResolveAssemblyReference.cache
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.Form1.resources
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.Properties.Resources.resources
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.csproj.GenerateResource.Cache
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.exe
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.pdb

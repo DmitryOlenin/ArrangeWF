@@ -1,0 +1,8 @@
+c:\GitHub\ArrangeWF\ArrangeWF\bin\Release\ArrangeWF.exe.config
+c:\GitHub\ArrangeWF\ArrangeWF\bin\Release\ArrangeWF.exe
+c:\GitHub\ArrangeWF\ArrangeWF\bin\Release\ArrangeWF.pdb
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Release\ArrangeWF.Form1.resources
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Release\ArrangeWF.Properties.Resources.resources
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Release\ArrangeWF.csproj.GenerateResource.Cache
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Release\ArrangeWF.exe
+c:\GitHub\ArrangeWF\ArrangeWF\obj\Release\ArrangeWF.pdb
