@@ -1,9 +1,10 @@
 language: csharp
 solution: ArrangeWF.sln
-before_install:
-  - sudo apt-get install nunit-console
-before_script:
+
+install:
   - nuget restore ArrangeWF.sln
-after_script:
-  - xbuild ArrangeWF.sln
-  - nunit-console UnitTest/bin/Debug/UnitTest.dll
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+
+script:
+  - xbuild  /p:Configuration=Release ArrangeWF.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./UnitTest/bin/Release/UnitTest.dll
