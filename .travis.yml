@@ -1,2 +1,8 @@
 language: csharp
 solution: ArrangeWF.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore ArrangeWF.sln
+after_script:
+  - nunit-console UnitTest/bin/Debug/UnitTest.dll
