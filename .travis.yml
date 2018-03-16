@@ -5,6 +5,23 @@ install:
   - nuget restore ArrangeWF.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 
+dist: trusty
+sudo: required
+
+addons:
+  firefox: latest
+  apt:
+    sources:
+     - google-chrome
+    packages:
+     - google-chrome-stable fluxbox
+
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3
+  - fluxbox >/dev/null 2>&1 &
+
 script:
-  - xvfb-run make test
+  - xbuild  /p:Configuration=Release ArrangeWF.sln
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./UnitTest/bin/Release/UnitTest.dll
