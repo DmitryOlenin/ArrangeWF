@@ -18,7 +18,7 @@ namespace UnitTest
             var card2 = new Form1.Card { CityFrom = "Москва", CityTo = "Париж" };
             var card3 = new Form1.Card { CityFrom = "Кельн", CityTo = "Москва" };
             var cards = new List<Form1.Card> { card1, card2, card3 };
-            var cardsGood = new List<Form1.Card> { card1, card3, card2 };
+            var cardsGood = new List<Form1.Card> { card3, card2, card1 };
 
             // act
 
