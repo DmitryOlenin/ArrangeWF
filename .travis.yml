@@ -5,16 +5,16 @@ install:
   - nuget restore ArrangeWF.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 
-dist: trusty
-sudo: required
+# dist: trusty
+# sudo: required
 
-addons:
-  firefox: latest
-  apt:
-    sources:
-     - google-chrome
-    packages:
-     - google-chrome-stable fluxbox
+# addons:
+#   firefox: latest
+#   apt:
+#     sources:
+#      - google-chrome
+#     packages:
+#      - google-chrome-stable fluxbox
 
 before_script:
   - "export DISPLAY=:99.0"
