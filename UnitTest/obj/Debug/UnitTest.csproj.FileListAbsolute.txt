@@ -1,9 +1,14 @@
 C:\GitHub\ArrangeWF\UnitTest\bin\Debug\UnitTest.dll
 C:\GitHub\ArrangeWF\UnitTest\bin\Debug\UnitTest.pdb
 C:\GitHub\ArrangeWF\UnitTest\bin\Debug\ArrangeWF.exe
-C:\GitHub\ArrangeWF\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\GitHub\ArrangeWF\UnitTest\bin\Debug\ArrangeWF.pdb
-C:\GitHub\ArrangeWF\UnitTest\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 C:\GitHub\ArrangeWF\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
 C:\GitHub\ArrangeWF\UnitTest\obj\Debug\UnitTest.dll
 C:\GitHub\ArrangeWF\UnitTest\obj\Debug\UnitTest.pdb
+C:\GitHub\ArrangeWF\UnitTest\bin\Debug\NUnit3.TestAdapter.dll
+C:\GitHub\ArrangeWF\UnitTest\bin\Debug\NUnit3.TestAdapter.pdb
+C:\GitHub\ArrangeWF\UnitTest\bin\Debug\nunit.engine.dll
+C:\GitHub\ArrangeWF\UnitTest\bin\Debug\nunit.engine.api.dll
+C:\GitHub\ArrangeWF\UnitTest\bin\Debug\Mono.Cecil.dll
+C:\GitHub\ArrangeWF\UnitTest\bin\Debug\nunit.framework.dll
+C:\GitHub\ArrangeWF\UnitTest\bin\Debug\nunit.framework.xml

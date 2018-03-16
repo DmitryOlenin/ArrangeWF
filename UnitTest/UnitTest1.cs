@@ -1,15 +1,14 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿//using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ArrangeWF;
 using System.Collections.Generic;
-using System.Linq;
+using NUnit.Framework;
 
 namespace UnitTest
 {
-    [TestClass]
-    public class UnitTest1
+    [TestFixture]
+    public class NUnitTest
     {
-        [TestMethod]
+        [Test]
         public void CitySortingTest()
         {
             // arrange
@@ -29,7 +28,6 @@ namespace UnitTest
 
             //Assert.AreEqual(cardsGood, cardsSorted, @"Неверный алгоритм сортировки");
             CollectionAssert.AreEqual(cardsGood, cardsSorted, @"Неверный алгоритм сортировки");
-
         }
     }
 }
