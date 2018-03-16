@@ -5,4 +5,5 @@ before_install:
 before_script:
   - nuget restore ArrangeWF.sln
 after_script:
+  - xbuild ArrangeWF.sln
   - nunit-console UnitTest/bin/Debug/UnitTest.dll
