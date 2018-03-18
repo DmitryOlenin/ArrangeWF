@@ -16,11 +16,13 @@ namespace UnitTest
             // arrange
 
             var frm = new Form1();
-            var card1 = new Form1.Card { CityFrom = "Мельбурн", CityTo = "Кельн" };
+            var card1 = new Form1.Card { CityFrom = "Амстердам", CityTo = "Брюгге" };
             var card2 = new Form1.Card { CityFrom = "Москва", CityTo = "Париж" };
             var card3 = new Form1.Card { CityFrom = "Кельн", CityTo = "Москва" };
-            var cards = new List<Form1.Card> { card1, card2, card3 };
-            var cardsGood = new List<Form1.Card> { card1, card3, card2 };
+            var card4 = new Form1.Card { CityFrom = "Мельбурн", CityTo = "Кельн" };
+            var card5 = new Form1.Card { CityFrom = "Париж", CityTo = "Амстердам" };
+            var cards = new List<Form1.Card> { card1, card2, card3, card4, card5 };
+            var cardsGood = new List<Form1.Card> { card4, card3, card2, card5, card1 };
 
             // act
 

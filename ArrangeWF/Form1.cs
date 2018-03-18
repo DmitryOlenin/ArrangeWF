@@ -19,8 +19,6 @@ namespace ArrangeWF
             string CityTo { get; set; } // Город # 2
         }
 
-        private List<Card> cards = new List<Card>();
-
         public class Card : ICard, IEquatable<Card>
         {
             public string CityFrom { get; set; }
@@ -38,7 +36,7 @@ namespace ArrangeWF
        
         private void b_start_Click(object sender, EventArgs e)
         {
-
+            var cards = new List<Card>();
             b_start.Enabled = false;
 
             Benchmark.Start();
@@ -75,14 +73,15 @@ namespace ArrangeWF
             b_start.Enabled = true;
         }
 
-        public List<Card> arrange (List<Card> cards)
+        public List<Card> arrange(List<Card> cards)
         {
 
             var result = new List<Card>();
             var cnt = cards.Count;
             var cardsFrom = cards.Select(x => x.CityFrom).ToList();
             var cardsTo = cards.Select(x => x.CityTo).ToList();
-           
+            //Card cardCurr = null; //FOR TEST
+
             //var all = string.Join(",", cards.Select(m => m.CityFrom + "," + m.CityTo)).Split(',');
 
             var from = "";
@@ -101,6 +100,9 @@ namespace ArrangeWF
                 if (hashTo.Add(cfrom))
                 {
                     from = cfrom;
+                    //cardCurr = cards[j];//FOR TEST
+                    //cards.RemoveAt(j);//FOR TEST
+                    //cards.Insert(0, cardCurr);//FOR TEST
                     break;
                 }
             }
@@ -129,10 +131,18 @@ namespace ArrangeWF
                 result.Add(cards[num]);   //2 действия
             }
 
+            //for (int i = 0; i < cards.Count-1; i++)
+            //{
+            //    cardCurr = cards[cards.IndexOf(cards[i])];
+            //    cards[cards.IndexOf(cards[i])] = cards[i+1];
+            //    cards[i+1] = cardCurr;
+            //}
+
             //Количество операций для упорядочивания в зависимости от количества карточек(n): n * (n + 4)
             //O(n2) — квадратичная сложность
 
             return result;
+            //return cards;
         }
 
         //Custom method instead "IndexOf"
