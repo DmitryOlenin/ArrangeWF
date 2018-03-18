@@ -76,7 +76,7 @@ namespace UnitTest
 
             // assert
 
-            CollectionAssert.AreEqual(startList, randomList, @"Неверный алгоритм рандомизации городов");
+            CollectionAssert.AreNotEqual(startList, randomList, @"Неверный алгоритм рандомизации городов");
         }
 
 
