@@ -3,6 +3,8 @@ using ArrangeWF;
 using System.Collections.Generic;
 using NUnit.Framework;
 
+//https://travis-ci.org/DmitryOlenin/ArrangeWF
+
 namespace UnitTest
 {
     [TestFixture]
@@ -29,5 +31,54 @@ namespace UnitTest
             //Assert.AreEqual(cardsGood, cardsSorted, @"Неверный алгоритм сортировки");
             CollectionAssert.AreEqual(cardsGood, cardsSorted, @"Неверный алгоритм сортировки");
         }
+
+        [Test]
+        public void CityAddTest()
+        {
+
+            // arrange
+
+            var frm = new Form1();
+            var hashFrom = new HashSet<string>();
+            var hashTo = new HashSet<string>();
+            var result = true;
+
+            // act
+
+            var randomList = frm.TestListAdd(100);
+            for (int i = 0; i < randomList.Count; i++)
+            {
+                if (!hashFrom.Add(randomList[i].CityFrom) || !hashTo.Add(randomList[i].CityTo))
+                {
+                    result = false;
+                    break;
+                }
+            }
+
+            // assert
+
+            Assert.IsTrue(result, @"Неверный алгоритм добавления городов");
+        }
+
+        [Test]
+        public void CityRandomizeTest()
+        {
+
+            // arrange
+
+            var frm = new Form1();
+
+            // act
+
+            var startList = frm.TestListAdd(100);
+            var randList = new List<Form1.Card>(startList);
+            var randomList = frm.TestListShuffle(randList);
+
+            // assert
+
+            CollectionAssert.AreNotEqual(startList, randomList, @"Неверный алгоритм рандомизации городов");
+        }
+
+
     }
 }

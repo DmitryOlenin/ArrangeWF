@@ -155,7 +155,7 @@ namespace ArrangeWF
             return result;
         }
 
-        private List<Card> TestListAdd(int cityCount, int cityLen = 5)
+        public List<Card> TestListAdd(int cityCount, int cityLen = 5)
         {
             string[] chars = { "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z", "a", "e", "i", "o", "u" };
             var rndFrom = new Random();
@@ -191,8 +191,15 @@ namespace ArrangeWF
                 cards.Add(curr);
             }
 
+            return TestListShuffle(cards); 
+        }
+
+        public List<Card> TestListShuffle(List<Card> cards)
+        {
+            var rndFrom = new Random();
+
             //Тасование Фишера — Йетса
-            for (int k = cards.Count-1; k >= 1; k--)
+            for (int k = cards.Count - 1; k >= 1; k--)
             {
                 int j = rndFrom.Next(k + 1);
                 // обменять значения data[j] и data[i]
@@ -201,7 +208,7 @@ namespace ArrangeWF
                 cards[k] = temp;
             }
 
-            return cards; 
+            return cards;
         }
 
         private void Form1_Load(object sender, EventArgs e)

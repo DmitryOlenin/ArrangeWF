@@ -6,3 +6,4 @@ c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.Properties.Resources.resources
 c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.csproj.GenerateResource.Cache
 c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.exe
 c:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.pdb
+C:\GitHub\ArrangeWF\ArrangeWF\obj\Debug\ArrangeWF.csprojResolveAssemblyReference.cache
